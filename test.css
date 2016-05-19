@@ -1,0 +1,22 @@
+input:focus{
+	background-color: red;
+}
+#box{
+	width: 255px;
+	height: 180px;
+	background-color: #000;
+	margin: auto;
+	position: relative;
+	border-style: double;
+	border-color: red;
+	background-image:url(https://i.ytimg.com/vi/oWKJAmOIZlQ/maxresdefault.jpg);
+
+}
+
+#result{
+	position: absolute;
+	margin: auto;
+	margin-left: 22px;
+	margin-top: 5px;
+}
+input:

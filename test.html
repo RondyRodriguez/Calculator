@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="test.css">
+<div id="box">
+<form name="frm">
+<div id="result"><input name="result" style="width:200px" style=""></input></div>
+<br/>
+<br/>
+<input type="button" value="1" name="1" onClick="run1()" style="width:60px">
+<input type="button" value="2" name="2" onClick="run2()" style="width:60px">
+<input type="button" value="3" name="3" onClick="run3()" style="width:60px">
+<input type="button" value="+" name="+" onClick="runplus()" style="width:60px">
+<br/>
+<br/>
+<input type="button" value="4" name="4" onClick="run4()" style="width:60px">
+<input type="button" value="5" name="5" onClick="run5()" style="width:60px">
+<input type="button" value="6" name="6" onClick="run6()" style="width:60px">
+<input type="button" value="-" name="rest" onClick="runrest()" style="width:60px">
+<br/>
+<br/>
+<input type="button" value="7" name="7" onClick="run7()" style="width:60px">
+<input type="button" value="8" name="8" onClick="run8()" style="width:60px">
+<input type="button" value="9" name="9" onClick="run9()" style="width:60px">
+<input type="button" value="*" name="multi" onClick="runmulti()" style="width:60px">
+<br/>
+<br/>
+<input type="button" value="c" name="clear" onClick="runclear()" style="width:60px">
+<input type="button" value="0" name="0" onClick="run0()" style="width:60px">
+<input type="button" value="." name="." onClick="rundec()" style="width:60px">
+<input type="button" value="=" name="=" onClick="evalu()" style="width:60px">
+</form>
+<script type="text/javascript">
+	function run1(){
+		document.frm.result.value +="1";
+	}
+	
+	function run2(){
+		document.frm.result.value +="2";
+	}
+	
+	function run3(){
+		document.frm.result.value +="3";
+	}
+	
+	function run4(){
+		document.frm.result.value +="4";
+	}
+
+	function run5(){
+		document.frm.result.value +="5";
+	}
+
+	function run6(){
+		document.frm.result.value +="6";
+	}
+	
+	function run7(){
+		document.frm.result.value +="7";
+	}
+
+	function run8(){
+		document.frm.result.value +="8";
+	}
+
+	function run9(){
+		document.frm.result.value +="9";
+	}
+
+
+	function run0(){
+		document.frm.result.value +="0";
+	}
+function runmulti() {
+document.frm.result.value +="*";
+}
+function runplus() {
+document.frm.result.value +="+";
+}
+function runrest() {
+document.frm.result.value +="-";
+}
+function runclear(){
+	frm.reset();
+}
+function rundec(){
+	document.frm.result.value +=".";
+}
+function evalu() {
+	var evalo = eval(document.frm.result.value);
+	document.frm.result.value = evalo;
+}
+</script>
+</div>
+</style>
+</html>
